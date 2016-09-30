@@ -15,7 +15,7 @@
 
   .jumbotron {
     margin-bottom: 0px;
-    background-image: url(scrum.jpg);
+    background-image: url("img/scrum.jpg");
     background-color: black;
     background-position: 0% 25%;
     background-size: cover;
@@ -73,7 +73,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="cap.jpg" height="50" width="40"></a>
+      <a class="navbar-brand" href="index.html"><img src="img/cap.jpg" height="50" width="40"></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
@@ -102,11 +102,11 @@
 
 <div class="row">
   <div class="col-s-0 col-md-3">
-    <img id= "firstFans"src="scrumsideleft.jpg" alt="" height="800px" width="100%" >
+    <img id= "firstFans"src="img/scrumsideleft.jpg" alt="" height="800px" width="100%" >
   </div>
   <div class="col-md-6"> <!-- @begin main column -->
     <div class="row">
-     <!--  <div class ="col-md-6" align="left"><img src="irishfans.jpg"></div>
+     <!--  <div class ="col-md-6" align="left"><img src="img/irishfans.jpg"></div>
      <div class ="col-md-6" align="right"><h1>fans sfsfsdfsd pic</h1></div> -->
 
      <div class="col-lg-12" align="center"><h1>Choose your teams</h1></div>
@@ -127,19 +127,19 @@
         <!-- <button type="submit" class="btn btn-default" class id="button2">Submit</button> -->
       </div>
     </div>
-    <div class="col-md-5" align="center"><img id="team-1-img" src="scrumsideleft.jpg" height="600px" width="100%"></div>
-    <div class="col-md-2" align="center"><img src="vs.png" height="60px" width="60px"></div>
-    <div class="col-md-5" align="center"><img id="team-2-img" src="scrumsideright.jpg" height="600px" width="100%">
+    <div class="col-md-5" align="center"><img id="team-1-img" src="img/scrumsideleft.jpg" height="600px" width="100%"></div>
+    <div class="col-md-2" align="center"><img src="img/vs.png" height="60px" width="60px"></div>
+    <div class="col-md-5" align="center"><img id="team-2-img" src="img/scrumsideright.jpg" height="600px" width="100%">
 
     </div>
   </div>
 </div> <!-- @end main column -->
 <div class="col-md-3">
- <img id= "secondFans"src="scrumsideright.jpg" alt="" height="800px" width="100%">
+ <img id= "secondFans"src="img/scrumsideright.jpg" alt="" height="800px" width="100%">
 </div>
 </div>
 
-<div id="content">
+<div class="container" id="content">
 
 </div>
 <!-- <div >
@@ -150,7 +150,7 @@
 
 <div class ="col-md-12"></div>
 
-<div class="col-md-5" align="center"><img id="team-1-img" src="" height="100%" width="100%"></div>
+<div class="col-md-5" align="center"><img id="team-1-img" src="img/" height="100%" width="100%"></div>
 <div class="col-md-2" align="center"><img src="vs.png" height="60px" width="60px"></div>
 <div class="col-md-5" align="center"><img id="team-2-img" src="" height="100%" width="100%"></div> -->
 
@@ -176,8 +176,8 @@
       var firstTeam = $("#inputOne").val()
       teamOne+= firstTeam;
 
-      $("#team-1-img").attr("src", firstTeam + ".png" )
-      $("#firstFans").attr("src",firstTeam+"fans.jpg")
+      $("#team-1-img").attr("src", "img/" +  firstTeam + ".png" )
+      $("#firstFans").attr("src", "img/" + firstTeam+"fans.jpg")
       
 
     });
@@ -185,8 +185,8 @@
     $("#inputTwo" ).on( "blur", function(){
       var secondTeam = $("#inputTwo").val()
       teamTwo += secondTeam;
-      $("#team-2-img").attr("src", secondTeam + ".png" )
-      $("#secondFans").attr("src",secondTeam+"fans.jpg")
+      $("#team-2-img").attr("src", "img/" +  secondTeam + ".png" )
+      $("#secondFans").attr("src", "img/" + secondTeam+"fans.jpg")
       
       // show ireland v england result
 
