@@ -5,4 +5,4 @@ please use the testcase of ireland and scotland both in lowercase and use tab to
 this was intented as a proof of concept of the final rugby blog app
 
 
-[Stream One Project]([Stream One Project]()
+[Stream One Project](https://clivecullen.github.io/)
